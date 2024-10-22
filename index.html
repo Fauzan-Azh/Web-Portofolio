@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Fauzan Azhima</title>
+    <link rel="icon" href="icon.png" type="image/x-icon">
+    <style>
+        /* Reset default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Base styles */
+        body {
+            font-family: Montserrat, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header styles */
+        header {
+            text-align: center;
+            padding: 2rem;
+            background-color: #f5f5f5;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+        }
+
+        /* Navigation styles */
+        nav {
+            background-color: #333;
+            padding: 1rem;
+            border-radius: 5px;
+            margin-bottom: 2rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        /* Pseudo-class for navigation */
+        nav a:hover {
+            background-color: #555;
+        }
+
+        /* Main content styles */
+        main {
+            display: grid;
+            gap: 2rem;
+        }
+
+        section {
+            padding: 2rem;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        /* Profile section */
+        .profile-img {
+            width: 300px;
+            height: 450px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin: 1rem auto;
+            display: block;
+        }
+
+        /* Pseudo-element for sections */
+        section h2::before {
+            content: "§ ";
+            color: #666;
+        }
+
+        /* Table styles */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 600px;
+            margin: 1rem auto;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f5f5f5;
+        }
+
+        /* Form styles */
+        .contact-form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+        }
+
+        /* Special character styling */
+        .special-char {
+            font-size: 1.2em;
+            color: #666;
+        }
+
+        /* Footer styles */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: #333;
+            color: white;
+            border-radius: 10px;
+            margin-top: 2rem;
+        }
+
+        /* Media elements */
+        .media-container {
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        audio, video {
+            max-width: 100%;
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hello, I'm Fauzan Azhima!</h1>
+        <p><span class="special-char">&copy;</span> 2024 Portfolio</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="about">
+            <div style="display: flex; align-items: center;">
+                <img src="fauzanprofil.png" alt="Foto Fauzan" class="profile-img" style="margin-right: 20px; width: 350px;">
+                <p class="intro-text">
+                    Hello, I'm <strong>Fauzan Azhima</strong> &mdash; a <em>UI/UX</em> Designer and Front-end Developer committed to crafting intuitive and engaging user experiences. With a strong background in visual design and web development, I combine stunning aesthetics with seamless functionality to deliver digital products that are not only visually appealing but also user-friendly. I believe that great design is the result of a deep understanding of user needs, and I strive to create user-centered solutions.
+                </p>
+            </div>
+            
+            <div class="media-container">
+                <h3>Introduction Video</h3>
+                <video controls width="560" height="315">
+                    <source src="FauzanAzhima.mp4" type="video/mp4">
+                    Your browser doesn't support video playback.
+                </video>
+
+                <h3>Background Music</h3>
+                <audio controls>
+                    <source src="The 1975 - About You (Official).mp3" type="audio/mpeg">
+                    Your browser doesn't support audio playback.
+                </audio>
+                <p>The 1975 - About You </p>
+            </div>
+        </section>
+
+        <section id="biodata">
+            <h2>Biodata</h2>
+            <table>
+                <tr>
+                    <th colspan="2">Personal Information</th>
+                </tr>
+                <tr>
+                    <td>Full Name</td>
+                    <td>Fauzan Azhima</td>
+                </tr>
+                <tr>
+                    <td>Age</td>
+                    <td>20 Years</td>
+                </tr>
+                <tr>
+                    <td>Birth Date</td>
+                    <td>February 27, 2004</td>
+                </tr>
+                <tr>
+                    <td>Religion</td>
+                    <td>Islam</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="portfolio">
+            <h2>My Series</h2>
+            <ol>
+
+                <li>
+                    <h3>Web Development</h3>
+                    <div style="display: flex; align-items: center;">
+                        <img src="web.jpg" alt="Web" class="web-img" style="margin-right: 20px; width: 250px;">
+                        <p class="portfolio">
+                            Experienced web developer specializing in crafting innovative and visually stunning web applications. With a strong foundation in HTML, CSS, and JavaScript, I leverage the latest technologies to deliver high-performance, user-centric solutions.
+                        </p>
+                    </div>
+                    
+                </li>
+
+                <li>
+                    <h3>Graphic Design</h3>
+                    <div style="display: flex; align-items: center;">
+                        <img src="design.jpg" alt="Web" class="web-img" style="margin-right: 20px; width: 250px;">
+                        <p class="portfolio">
+                            Creative and passionate graphic designer dedicated to building strong brand identities. I excel in creating visually compelling designs that effectively communicate your brand's message and resonate with your target audience.
+                        </p>
+                    </div>
+                    
+                </li>
+
+                <li>
+                    <h3>UI/UX Design</h3>
+                    <div style="display: flex; align-items: center;">
+                        <img src="uiux.jpg" alt="Web" class="web-img" style="margin-right: 20px; width: 250px;">
+                        <p class="portfolio">
+                            Skilled UI/UX designer focused on delivering intuitive and user-friendly interfaces. By conducting thorough user research and applying design principles, I create applications that provide seamless user experiences and maximize engagement.
+                        </p>
+                    </div>
+                </li>
+
+            </ol>
+            <br>
+            <h3>Latest Projects</h3>
+            <ul>
+                <li>Password Checker</li>
+                <p>Sebuah alat keamanan esensial yang tidak hanya mengukur kekuatan kata sandi, tetapi juga memberikan rekomendasi kata sandi yang kuat, serta mendeteksi kebocoran data yang mungkin terkait dengan kata sandi Anda.</p>
+                <li>File Downloader</li>
+                <p>Lebih dari sekadar mengunduh file, alat ini memungkinkan Anda mengatur jadwal pengunduhan, melanjutkan pengunduhan yang terhenti, dan mengunduh beberapa file secara simultan, meningkatkan efisiensi Anda.</p>
+                <li>Video Player</li>
+                <p> Nikmati pengalaman menonton video yang disesuaikan dengan preferensi Anda. Fitur-fitur seperti subtitle kustom, pemutaran kecepatan variabel, dan mode layar penuh imersif membuat menonton video menjadi lebih menyenangkan.</p>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Preferred Contact Method:</label><br>
+                    <label style="display: inline-block;">
+                        <input type="radio" id="email-pref" name="contact-pref" value="email"> Email
+                    </label>
+                    <label style="display: inline-block; margin-left: 10px;">
+                        <input type="radio" id="phone-pref" name="contact-pref" value="phone"> Phone
+                    </label>
+                </div>
+                
+                <div class="form-group">
+                    <label>Interested In:</label><br>
+                    <label style="display: inline-block;">
+                        <input type="checkbox" id="web-dev" name="interests" value="web-development"> Web Development
+                    </label>
+                    <label style="display: inline-block; margin-left: 10px;">
+                        <input type="checkbox" id="ui-ux" name="interests" value="ui-ux"> UI/UX Design
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label for="project-type">Project Type:</label>
+                    <select id="project-type" name="project-type">
+                        <option value="">Select a project type</option>
+                        <option value="website">Website</option>
+                        <option value="mobile-app">Mobile App</option>
+                        <option value="desktop-app">Desktop App</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message"></textarea>
+                </div>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Fauzan Azhima. All rights reserved.</p>
+        <p>Connect with me: 
+            <a href="https://www.instagram.com/fauzanazhima._/">Instagram</a> | 
+            <a href="https://www.canva.com/design/DAGMJoKc2Vo/g8PWBf8Q_R7Da0GfaOYUhg/edit">CV</a>
+        </p>
+    </footer>
+</body>
+</html>
