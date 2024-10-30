@@ -1,0 +1,40 @@
+
+.header {
+    background-color: #f8f9fa;
+}
+
+.header-title {
+    color: #333;
+}
+
+.main-content {
+    color: #333;
+}
+
+.portfolio-content .portfolio-img {
+    object-fit: cover;
+    height: 200px;
+}
+
+.contact-label {
+    font-weight: bold;
+}
+
+.contact-button {
+    background-color: #007bff;
+    border: none;
+}
+
+.contact-button:hover {
+    background-color: #0056b3;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+}
+
+.footer-text {
+    margin: 0;
+}
+    
